@@ -7,3 +7,4 @@ class Client(models.Model):
     address = models.CharField(max_length=200)
     telephone = models.BigIntegerField()
     create_time=models.DateTimeField(auto_now_add=True)
+
