@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'clients',
+    'users',
+    'vehicles',
     'rest_framework'
 ]
 
@@ -84,7 +86,7 @@ WSGI_APPLICATION = 'api.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='sqlite:///db.sqlite3',
+        default='sqlite:///database',
         conn_max_age=600
     )
 }
